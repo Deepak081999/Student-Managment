@@ -31,8 +31,8 @@
                     <tr>
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $item->enroll_no }}</td>
-                        <td>{{ $item->batch_id }}</td>
-                        <td>{{ $item->student_id }}</td>
+                        <td>{{ $item->batch ? $item->batch->name : 'N/A' }}</td>
+                        <td>{{ $item->student ? $item->student->name : 'N/A' }}</td>
                         <td>{{ $item->join_date }}</td>
                         <td>{{ $item->fee }}</td>
 

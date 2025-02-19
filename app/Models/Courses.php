@@ -14,5 +14,9 @@ class Courses extends Model
         'syllabus',
         'duration',
     ];
+    public function duration()
+    {
+        return $this->duration . "Months";
+    }
     use HasFactory;
 }

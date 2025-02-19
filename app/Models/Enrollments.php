@@ -15,5 +15,14 @@ class Enrollments extends Model
         'join_date',
         'fee',
     ];
+    public function batch()
+    {
+        return $this->belongsTo(Batches::class, 'batch_id');
+    }
+
+    public function student()
+    {
+        return $this->belongsTo(Student::class, 'student_id');
+    }
     use HasFactory;
 }
