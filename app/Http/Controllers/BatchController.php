@@ -31,20 +31,36 @@ class BatchController extends Controller
 
     public function show($id): VIew
     {
-        $batches = Batches::find($id);
+        $batches = Batches::with('course')->find($id);
+
+        if (! $batches) {
+            return redirect('batches')->with('error', 'Batch not found!');
+        }
+
         return view('batches.show')->with('batches', $batches);
+
     }
 
     public function edit($id): View
     {
         $batches = Batches::find($id);
-        return view('batches.edit')->with('batches', $batches);
+        $courses = Courses::all(); // Fetch courses for dropdown
+
+        if (! $batches) {
+            return redirect('batches')->with('error', 'Batch not found!');
+        }
+
+        return view('batches.edit', compact('batches', 'courses'));
+
     }
 
     public function update(Request $request, $id)
     {
         $batches = Batches::find($id);
-        $input   = $request->all();
+        if (! $batches) {
+            return redirect('batches')->with('error', 'Batch not found!');
+        }
+        $input = $request->all();
         $batches->update($input);
         return redirect('batches')->with('flash_message', 'batches Updated!');
     }
