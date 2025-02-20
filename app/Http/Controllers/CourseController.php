@@ -24,7 +24,7 @@ class CourseController extends Controller
     {
         $input = $request->all();
         Courses::create($input);
-        return redirect('courses')->with('flash_message', 'teacher Addedd!');
+        return redirect('courses')->with('flash_message', 'Courses Addedd!');
     }
 
     public function show($id): VIew
