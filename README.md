@@ -1,13 +1,17 @@
-Student Management System
+# Student Management System
+
 A Student Management System built using Laravel to manage student records efficiently. This system allows administrators to perform CRUD (Create, Read, Update, Delete) operations on student details.
 
-🚀 Features<br>
-📌 Add, update, delete, and view student records
-📌 Search and filter students
-📌 Student profile management
-📌 Responsive user interface
-📌 Role-based access control
-🛠️ Technologies Used
+# 🚀 Features<br>
+📌 Add, update, delete, and view student records<br>
+📌 Search and filter students<br>
+📌 Student profile management<br>
+📌 Responsive user interface<br>
+📌 Role-based access control<br>
+
+
+
+# 🛠️ Technologies Used
 Backend: Laravel (PHP Framework)
 Frontend: Blade (Laravel templating engine), Bootstrap, JavaScript
 Database: MySQL
