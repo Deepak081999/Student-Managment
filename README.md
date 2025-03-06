@@ -51,6 +51,7 @@ php artisan serve
 ### 7. Open the app in your browser:
 http://127.0.0.1:8000
 
+<<<<<<< HEAD
 
 ## 🖼️ Screenshots  
 
@@ -59,6 +60,9 @@ http://127.0.0.1:8000
 
 ### 📍 Student Management Page  
 <img src="https://your-image-url.com/student-management.jpg" alt="Student Management Page" width="700">
+=======
+# 🖼️ Screenshots
+>>>>>>> 39749fcd64d84e61711cdf1e7ff3d202f6d71051
 
 
 # 👨‍💻 Contributing
